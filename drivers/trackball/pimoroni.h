@@ -103,8 +103,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 process_trackball_user(trackball_record_t *record) {
     if (record->type & TB_MOVED) {
         if (go_fast) {
-            record->type.x *= 20;
-            record->type.y *= 20;
+            record->x *= 20;
+            record->y *= 20;
         }
     }
 }
